@@ -1,0 +1,9 @@
+item {
+	id: 1
+	name: 'nucleo'
+}
+
+item {
+	id: 2
+	name: 'delta'
+}
