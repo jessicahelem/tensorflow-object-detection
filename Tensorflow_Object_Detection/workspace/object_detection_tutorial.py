@@ -210,7 +210,19 @@ def run_inference_for_single_image(image, graph):
         teste=cv2.rectangle(image_np,(coordinates[0][2],coordinates[0][1]),
                             (coordinates[1][0],coordinates[1][3]),verde,2)
 
-        crop = image_np[coordinates[0][2]:coordinates[0][1] , coordinates[1][0]:coordinates[1][3]].copy()
+
+
+        y = coordinates[0][1]
+        x = coordinates[1][0]
+        w = coordinates[0][2] - x
+        h= coordinates[1][3] - y
+
+        croped_image = image_np[y:y+h, x:x+w]
+
+
+
+
+
 
 
     return output_dict
