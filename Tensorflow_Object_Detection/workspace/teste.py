@@ -42,7 +42,7 @@ def click_event(event, x, y, flags, params):
 
 if __name__ == "__main__":
     # reading the image
-    img = cv2.imread('corte.png', 1)
+    img = cv2.imread('resultado/fingerprint0000.png', 1)
 
     # displaying the image
     cv2.imshow('image', img)

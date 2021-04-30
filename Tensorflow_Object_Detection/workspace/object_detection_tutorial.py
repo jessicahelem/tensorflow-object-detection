@@ -204,7 +204,15 @@ def run_inference_for_single_image(image, graph):
                 use_normalized_coordinates=True,
                 line_thickness=8,
                 min_score_thresh=0.2)
-    print(coordinates)
+
+        verde = (0, 255, 0)
+
+        teste=cv2.rectangle(image_np,(coordinates[0][2],coordinates[0][1]),
+                            (coordinates[1][0],coordinates[1][3]),verde,2)
+
+        crop = image_np[coordinates[0][2]:coordinates[0][1] , coordinates[1][0]:coordinates[1][3]].copy()
+
+
     return output_dict
 
 
@@ -230,10 +238,11 @@ for image_path in range(0, len(TEST_IMAGE_PATHS)):
         instance_masks=output_dict.get('detection_masks'),
         use_normalized_coordinates=True,
         line_thickness=8)
+
+
     cv2.imshow("image %4i" % image_path, image_np)
     cv2.imwrite("resultado/fingerprint%04i.png" % image_path, image_np)
     image_path += 1
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-    #plt.figure(figsize=IMAGE_SIZE)
-    #plt.show()
+
