@@ -13,8 +13,7 @@ from collections import defaultdict
 from io import StringIO
 import zipfile
 from IPython import get_ipython'''
-
-
+import imutils
 import numpy as np
 import os
 from os import listdir
@@ -26,11 +25,13 @@ import cv2
 
 from distutils.version import StrictVersion
 import matplotlib
+
 matplotlib.use('Qt5Agg')
 
 from matplotlib import pyplot as plt
 
 from PIL import Image
+
 # This is needed since the notebook is stored in the object_detection folder.
 sys.path.append("..")
 from object_detection.utils import ops as utils_ops
@@ -43,11 +44,10 @@ if StrictVersion(tf.__version__) < StrictVersion('1.12.0'):
 # In[2]:
 
 
-
 # This is needed to display the images.
 
 
-#get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 '''try:
     get_ipython().magic('matplotlib inline')
 except:
@@ -95,7 +95,7 @@ NUM_CLASSES = 2
 
 detection_graph = tf.Graph()
 with detection_graph.as_default():
-    od_graph_def =tf.compat.v1.GraphDef()
+    od_graph_def = tf.compat.v1.GraphDef()
     with tf.compat.v2.io.gfile.GFile(PATH_TO_FROZEN_GRAPH, 'rb') as fid:
         serialized_graph = fid.read()
         od_graph_def.ParseFromString(serialized_graph)
@@ -205,41 +205,53 @@ def run_inference_for_single_image(image, graph):
                 line_thickness=8,
                 min_score_thresh=0.2)
 
+
+
         verde = (0, 255, 0)
+        # xmax = coordinates[0][2]
+        # ymin = coordinates[0][1]
+        # xmin = coordinates[1][0]
+        # ymax = coordinates[1][3]
 
-        teste=cv2.rectangle(image_np,(coordinates[0][2],coordinates[0][1]),
-                            (coordinates[1][0],coordinates[1][3]),verde,2)
-
-
-
-        y = coordinates[0][1]
-        x = coordinates[1][0]
-        w = coordinates[0][2] - x
-        h= coordinates[1][3] - y
-
-        croped_image = image_np[y:y+h, x:x+w]
-
-
-
+        #nucleo
+        xmin = coordinates[0][0]
+        #delta
+        xmax = coordinates[1][2]
+        #nucleo
+        ymin = coordinates[0][1]
+        #delta
+        ymax = coordinates[1][3]
 
 
+ 
+
+        try:
+            teste= cv2.rectangle(image_np, (xmax,ymin),(xmin,ymax), verde, 2)
+            # teste = cv2.rectangle(image_np, (xmax,ymin),(xmin,ymax), verde, 2)
+            # teste = cv2.rectangle(image_np, (xmin,xmax),(ymin,ymax), verde, 2)
 
 
-    return output_dict
+
+        except (IndexError, ValueError):
+            coordinates = 'null'
+            print('Não foi encontrado coordenadas na imagem')
+            pass
+
+    return output_dict, coordinates
 
 
 # In[10]:
 
 
 for image_path in range(0, len(TEST_IMAGE_PATHS)):
-    image = cv2.imread(join(PATH_TO_TEST_IMAGES_DIR,TEST_IMAGE_PATHS[image_path]),0)
+    image = cv2.imread(join(PATH_TO_TEST_IMAGES_DIR, TEST_IMAGE_PATHS[image_path]), 0)
     # the array based representation of the image will be used later in order to prepare the
     # result image with boxes and labels on it.
     image_np = load_image_into_numpy_array(image)
     # Expand dimensions since the model expects images to have shape: [1, None, None, 3]
     image_np_expanded = np.expand_dims(image_np, axis=0)
     # Actual detection.
-    output_dict = run_inference_for_single_image(image_np_expanded, detection_graph)
+    output_dict, t2 = run_inference_for_single_image(image_np_expanded, detection_graph)
     # Visualization of the results of a detection.
     vis_util.visualize_boxes_and_labels_on_image_array(
         image_np,
@@ -252,9 +264,36 @@ for image_path in range(0, len(TEST_IMAGE_PATHS)):
         line_thickness=8)
 
 
-    cv2.imshow("image %4i" % image_path, image_np)
-    cv2.imwrite("resultado/fingerprint%04i.png" % image_path, image_np)
+
+
     image_path += 1
+
+    cv2.imshow("image %04i" % image_path,image_np)
+
+    cv2.imwrite("resultado/fingerprint%04i.png" % image_path, image_np)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
+
+
+
+def cropped_image(image):
+    output_dict, t2 = run_inference_for_single_image(image_np_expanded, detection_graph)
+
+    try:
+        y = t2[0][1]
+        x = t2[1][0]
+        w = t2[0][2] - x
+        h = t2[1][3] - y
+        left = image[y:y + h, x:x + w]
+        right = image[y:y + h, x + w:x + w + w]
+
+    except (IndexError, ValueError):
+
+        y, x, w, h = 'null'
+        cv2.imshow("image %04i" % image_path, image_np)
+
+        print('Não foi encontrado coordenadas na imagem')
+
+
+    return image

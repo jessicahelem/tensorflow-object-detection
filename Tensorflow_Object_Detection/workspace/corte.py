@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread('test_images/22_2.jpg')
+image = cv2.imread('22_2.jpg')
 y = 292
 x = 199
 h = 138

@@ -20,9 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fb199c1-8dac-4565-ba06-27935a878099" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workspace/corte_left_rigth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workspace/test_images/17_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workspace/test_images/49_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workspace/test_images/50_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workspace/test_images/50_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workspace/test_images/52_3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/22_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/22_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/corte.py" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/corte.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workspace/object_detection_tutorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/object_detection_tutorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/resultado/corte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/resultado/fingerprint0000.png" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/resultado/fingerprint0000.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/resultado/fingerprint0001.png" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/resultado/fingerprint0001.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workspace/resultado/fingerprint0002.png" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/resultado/fingerprint0002.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/resultado/fingerprint0003.png" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/resultado/fingerprint0003.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/resultado/retangulo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/test_images/22_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/22_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/test_images/22_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/22_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/test_images/22_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/22_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/test_images/fingerprint2.png" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/fingerprint2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/workspace/teste.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +68,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/workspace/test_images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.object_detection_tutorial">
-    <configuration name="corte" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jessi\OneDrive\Desktop\tensorflow-object-detection\Tensorflow_Object_Detection\workspace\test_images" />
+      <recent name="C:\Users\jessi\OneDrive\Desktop\tensorflow-object-detection\Tensorflow_Object_Detection" />
+      <recent name="C:\Users\jessi\OneDrive\Desktop\tensorflow-object-detection\Tensorflow_Object_Detection\workspace" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jessi\OneDrive\Desktop\tensorflow-object-detection\Tensorflow_Object_Detection\workspace\test_images" />
+      <recent name="C:\Users\jessi\OneDrive\Desktop\tensorflow-object-detection\Tensorflow_Object_Detection" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.corte_left_rigth">
+    <configuration name="corte_left_rigth" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Tensorflow_Object_Detection" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -68,7 +99,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/workspace/corte.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/workspace/corte_left_rigth.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Tensorflow_Object_Detection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Temp" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Temp/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Tensorflow_Object_Detection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,9 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.corte_left_rigth" />
         <item itemvalue="Python.object_detection_tutorial" />
-        <item itemvalue="Python.corte" />
         <item itemvalue="Python.teste" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +224,11 @@
       <workItem from="1616614809532" duration="1114000" />
       <workItem from="1616860367853" duration="321000" />
       <workItem from="1619662789942" duration="2607000" />
-      <workItem from="1619784251647" duration="18351000" />
+      <workItem from="1619784251647" duration="37738000" />
+      <workItem from="1620076566964" duration="11872000" />
+      <workItem from="1620248387367" duration="1569000" />
+      <workItem from="1620331364667" duration="16104000" />
+      <workItem from="1620490845783" duration="15179000" />
     </task>
     <servers />
   </component>
@@ -179,30 +260,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1613186873227" />
-    <state width="1323" height="38" key="GridCell.Tab.0.bottom" timestamp="1619814928009">
+    <state width="1323" height="97" key="GridCell.Tab.0.bottom" timestamp="1620570534599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="38" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619814928009" />
-    <state width="1323" height="38" key="GridCell.Tab.0.center" timestamp="1619814928009">
+    <state width="1323" height="97" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620570534599" />
+    <state width="1323" height="97" key="GridCell.Tab.0.center" timestamp="1620570534599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="38" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619814928009" />
-    <state width="1323" height="38" key="GridCell.Tab.0.left" timestamp="1619814928009">
+    <state width="1323" height="97" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1620570534599" />
+    <state width="1323" height="97" key="GridCell.Tab.0.left" timestamp="1620570534599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="38" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619814928009" />
-    <state width="1323" height="38" key="GridCell.Tab.0.right" timestamp="1619814928009">
+    <state width="1323" height="97" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1620570534599" />
+    <state width="1323" height="97" key="GridCell.Tab.0.right" timestamp="1620570534599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="38" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619814928009" />
+    <state width="1323" height="97" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1620570534599" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1613186343156">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1613186343156" />
+    <state x="405" y="275" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1620493463723">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="405" y="275" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.728@0.0.1366.728" timestamp="1620493463723" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Tensorflow_Object_Detection$corte.coverage" NAME="corte Coverage Results" MODIFIED="1619799502867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workspace" />
-    <SUITE FILE_PATH="coverage/Tensorflow_Object_Detection$object_detection_tutorial.coverage" NAME="object_detection_tutorial Coverage Results" MODIFIED="1619814927971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workspace" />
-    <SUITE FILE_PATH="coverage/Tensorflow_Object_Detection$teste.coverage" NAME="teste Coverage Results" MODIFIED="1619797169882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workspace" />
+    <SUITE FILE_PATH="coverage/Tensorflow_Object_Detection$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1620079360209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp" />
+    <SUITE FILE_PATH="coverage/Tensorflow_Object_Detection$main.coverage" NAME="main Coverage Results" MODIFIED="1619846794474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Tensorflow_Object_Detection$object_detection_tutorial.coverage" NAME="object_detection_tutorial Coverage Results" MODIFIED="1620502113128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workspace" />
+    <SUITE FILE_PATH="coverage/Tensorflow_Object_Detection$hsv_finder.coverage" NAME="hsv_finder Coverage Results" MODIFIED="1619846077987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Tensorflow_Object_Detection$teste.coverage" NAME="teste Coverage Results" MODIFIED="1620501069206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workspace" />
+    <SUITE FILE_PATH="coverage/Tensorflow_Object_Detection$corte_left_rigth.coverage" NAME="corte_left_rigth Coverage Results" MODIFIED="1620570534521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workspace" />
   </component>
 </project>
